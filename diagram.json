@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Level 3 MQTT Sensor",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 40, "left": 260, "attrs": { "value": "2048" } }
+  ],
+  "connections": [
+    [ "pot1:VCC", "esp:3V3", "red", [] ],
+    [ "pot1:GND", "esp:GND.1", "black", [] ],
+    [ "pot1:SIG", "esp:34", "green", [] ]
+  ],
+  "dependencies": {}
+}
